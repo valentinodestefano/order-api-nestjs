@@ -15,6 +15,12 @@ export class CreateOrderDTO {
     readonly order_id: string;
 
     @ApiModelProperty({
+        description: 'order status',
+        example: 'no confirmed',
+    })
+    readonly status: string;
+
+    @ApiModelProperty({
         description: 'order products',
         example: '',
     })

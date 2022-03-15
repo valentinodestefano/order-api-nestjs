@@ -38,10 +38,11 @@ export class OrderController {
            return res.status(HttpStatus.BAD_REQUEST);
         }
         return res.status(HttpStatus.OK).json({
-            message: 'succesfull',
+            message: 'succesful',
             order: order
         })
     }
+
 
     @ApiTags('Order')
     @Delete('/deleteOrder/:orderID')

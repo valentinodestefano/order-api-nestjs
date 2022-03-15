@@ -12,6 +12,9 @@ export class Order{
     @Prop({required: true})
     created_at: Date;
 
+    @Prop({required: true})
+    status: string;
+
     @Prop({ unique : true, required : true, dropDups: true })
     order_id: string;
     

@@ -5,9 +5,10 @@ import { AppService } from './app.service';
 import { ClientModule } from './client/client.module';
 import { ProductsModule } from './products/products.module';
 import { OrderModule } from './order/order.module';
+import { MailModule } from './mail/mail.module';
 
 @Module({
-  imports: [MongooseModule.forRoot('mongodb+srv://valendesdel:Valentina_25@cluster0.hqhas.mongodb.net/cesticom?retryWrites=true&w=majority'), ClientModule, ProductsModule, OrderModule],
+  imports: [MongooseModule.forRoot('mongodb+srv://USERNAME:PASSWORD@cluster0.hqhas.mongodb.net/DATABASENAME?retryWrites=true&w=majority'), ClientModule, ProductsModule, OrderModule, MailModule],
   controllers: [AppController],
   providers: [AppService],
 })
